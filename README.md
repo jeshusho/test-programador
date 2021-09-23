@@ -172,14 +172,14 @@ Juan
 En Laravel, tiene ya definida la ruta tipo POST **“/multiplica”** que ejecuta una función que se encuentra en cierto controlador. La respuesta debe devolver la multiplicación de 2 números que fueron pasados en un JSON que tiene la forma
 ``` json
 {
-	number1: 20,
-	number2: 4
+	"number1": 20,
+	"number2": 4
 }
 ```
 Defina la función que retorna el siguiente JSON de ejemplo:
 ``` json
 {
-	result: 80
+	"result": 80
 }
 ```
 
@@ -223,9 +223,9 @@ Class Product extends Model
 ``` 
 Para que sea posible realizar lo siguiente en algún controlador:
 ```php 
-use App\Models\Category
-use App\Models\Product
-….
+    use App\Models\Category
+    use App\Models\Product
+    
 	// $products contiene la lista de productos de la categoría con id 1:
     $products = Category::find(1)->products;
 	// $category contiene la categoria del producto con id 1:
