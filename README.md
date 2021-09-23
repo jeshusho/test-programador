@@ -43,7 +43,7 @@ $router->get('posts/{postId}/comments/{commentId}', function ($post_id, $comment
 Está desarrollando un sistema para una concesionaria de automóviles, tiene una base de datos en MySQL con las tablas brands y models. Una marca de autos (brand) tiene uno o mas modelos asociados (models). Los campos de las tablas son las siguientes:
 * Tabla brand: id, name
 * Tabla model: id, brand_id, name
-Genere una consulta que arroje los modelos correspondientes a la marca que tiene como *name* exactamente **Audi**. Para identificar mejor, los campos del resultado deben ser model_id (campo id del model) y model (campos name del model)
+<p>Genere una consulta que arroje los modelos correspondientes a la marca que tiene como *name* exactamente **Audi**. Para identificar mejor, los campos del resultado deben ser model_id (campo id del model) y model (campos name del model)
 
 ### Respuesta
 ``` sql
@@ -118,7 +118,7 @@ Con la misma tabla del ejercicio anterior **currencies**, indique que debe agreg
 ```
 
 ## Pregunta 9
-Está desarrollando el frontend en Vue.js de un sistema e-learning y debe mostrar la lista de cursos en donde el usuario está matriculado. En el javascript tiene la variable **_cursos_** que es un array que contiene la lista de cursos (campos **nombreCurso** y **fechaMatricula**). Indique como se puede mostrar en un listado *<ul>* la lista de cursos, por ejemplo con la fecha de matrícula entre paréntesis, Ej: **Introducción a Vue (23/09/2021)**. En caso no esté matriculado en ningún curso, deberá mostrar el mensaje **No está matriculado en ningún curso**
+Está desarrollando el frontend en Vue.js de un sistema e-learning y debe mostrar la lista de cursos en donde el usuario está matriculado. En el javascript tiene la variable **_cursos_** que es un array que contiene la lista de cursos (campos **nombreCurso** y **fechaMatricula**). Indique como se puede mostrar en un listado `<ul>` la lista de cursos, por ejemplo con la fecha de matrícula entre paréntesis, Ej: **Introducción a Vue (23/09/2021)**. En caso no esté matriculado en ningún curso, deberá mostrar el mensaje **No está matriculado en ningún curso**
 La respuesta puede estar en template o en una función render.
 
 ### Respuesta
