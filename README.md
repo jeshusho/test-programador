@@ -6,13 +6,13 @@ Necesita crear una tabla llamada ‘countries’ que tendrá una lista de paíse
 ### Respuesta
 *Comandos para generacion de archivos*
 ``` bash
-# Respuesta váida 1:
+# Respuesta válida 1:
 $ php artisan make:model Country --migration --seed
 
-# Respuesta váida 2:
+# Respuesta válida 2:
 $ php artisan make:model Country --m –s
 
-# Respuesta váida 3:
+# Respuesta válida 3:
 $ php artisan make:model Country –migration
 $ php artisan make:seeder CountrySeeder
 
@@ -35,7 +35,7 @@ $router->get('posts/{postId}/comments/{commentId}', function ($post_id, $comment
     return [
         'post_id' => $post_id,
         'comment_id' => $comment_id
-    ]
+    ];
 });
 ```
 
@@ -73,7 +73,7 @@ Solo en el caso que Juan tenga nuevas notificaciones.
 
 ### Respuesta
 ``` html
-<p v-if="seen">Agora você me viu</p>
+<p v-if="notificaciones()">Hola Juan, tienes nuevas notificaciones</p>
 ```
 
 ## Pregunta 6
